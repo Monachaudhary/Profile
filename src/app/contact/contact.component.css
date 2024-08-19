@@ -1,0 +1,55 @@
+:host{
+    display: block;
+    color: white;
+    padding: 2rem 3rem;
+}
+ul{
+    margin-top: 2rem;
+    list-style: none;
+    padding: 0%;
+}
+.social-media{
+    font-size: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+   
+}
+a{
+    color: var(--green);
+    text-decoration: none;
+}
+.social-media li{
+    height: 60px;
+    width: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    color: var(--green);
+    background-color: rgba(255,255,255,0.2);
+
+}
+.contact-info li{
+    height: 30px;
+    font-size: 1.2rem;
+}
+.heart {
+    color: red;
+    margin-right: 0.5rem; /* Adjust spacing between heart and "India" */
+    font-size: 1.2rem; /* Adjust the size of the heart */
+    vertical-align: middle; /* Align the heart vertically with text */
+}
+:host.pc .container{
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: 1fr 1fr;
+}
+:host.pc h1{
+    grid-column: 1/3;
+
+}
+:host.pc .social-media, :host.pc .contact-info{
+    width: 400px;
+    margin: 0 auto;
+}
